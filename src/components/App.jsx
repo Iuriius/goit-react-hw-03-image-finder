@@ -73,7 +73,7 @@ export class App extends Component {
             <ImageGallery images={images} onClick={this.toggleModal} />
           </div>
           {images.length % 12 < 1 && images.length > 0 && (
-            <Button onClick={this.fetchPictures} btn={this.btn} />
+            <Button onClick={this.fetchPictures} btn={this.button} />
           )}
           <Loader loading={isLoading} />
           {showModal && <Modal url={modalUrl} toggleModal={this.toggleModal} />}
